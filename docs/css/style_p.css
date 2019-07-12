@@ -385,6 +385,10 @@ footer {
   display: flex;
   }
 
+  .header__logo img{
+    width: 100%;
+  }
+
     nav{
     position: relative;
     align-items: center;
