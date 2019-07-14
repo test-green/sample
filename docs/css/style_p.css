@@ -210,6 +210,8 @@ color:#666;
 .header__nav ul {
   display: flex;
   padding-right: 2em;
+  justify-content: center;/*スクロール外*/
+  align-items: center;/*スクロール外*/
     }
 
 .News{
@@ -325,9 +327,24 @@ footer {
   padding: 0 auto;
   text-align: center;
 }
+.footer {
+width: 100%;
+}
+
+.footer-inner {
+  justify-content: center;/*スクロール外*/
+  align-items: center;/*スクロール外*/
+}
+
+.footer-inner ul {
+  margin: 0;
+}
 
 .footer-inner li {
   list-style: none;
+}
+
+.footer-inner li:not(:first-child){
   margin-left: 2em;
 }
 
@@ -352,6 +369,7 @@ footer {
     background-color: #b2b2b2;
     content: "";
 }
+
 
 .footer_link-list-item:not(:last-child) {
     position: relative;
