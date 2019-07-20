@@ -49,10 +49,10 @@
     </div>
     <div class="header__nav">
     <ul class="">
-        <li><a href="#">News</a></li>
-        <li><a href="#">Menu</a></li>
-        <li><a href="#">Shop</a></li>
-        <li><a href="#">About</a></li>
+        <li><a href="#NewsInfo" class="anchor-link">News</a></li>
+        <li><a href="#Menu" class="anchor-link">Menu</a></li>
+        <li><a href="#Shop" class="anchor-link">Shop</a></li>
+        <li><a href="#Access" class="anchor-link">Access</a></li>
     </ul>
     </div>
   </nav>
@@ -99,10 +99,11 @@
 <div class="swiper-scrollbar"></div>
 </div>
 </div>
-<div class="">
+<div id="NewsInfo">
+<div>
   <!--<img src="https://unsplash.it/1920/1920/?image=1067" data-speed="1" class="img-parallax">
   <h2>Parallax Speed 1</h2>-->
-  <div id="NewsInfo">
+
     <div class="News">
       <div class="News_header">
         <h3>新着情報</h3>
@@ -122,8 +123,9 @@
     </div>
   </div>
 </div>
-<div class="">
+<div>
   <!--<img src="https://unsplash.it/1920/1920/?gravity=center" data-speed="-0.25" class="img-parallax">-->
+  <div id="Menu" class="anchor">
   <div id="contents">
   <div id="lineup">
   <!--<h2>Parallax Speed -0.25</h2>-->
@@ -179,9 +181,10 @@
 
 </div>
   </div>
+  </div>
 </div>
 <!--<div class="block">-->
-  <div id="about">
+  <div id="Shop" class="anchor">
   <!--<img src="https://unsplash.it/1920/1920/?image=1080" data-speed="0.25" class="img-parallax">-->
   <!--<h2>Parallax Speed 0.25</h2>-->
   <div class="contents-inner">
@@ -192,6 +195,7 @@
 </div>
   </div>
 <!--</div>-->
+<div id="Access" class="anchor">
 <div class="contents-inner">
   <img src="./img/gate-01_ja_0.png">
   <!--<div class="map-point">
@@ -199,6 +203,7 @@
     <img src="./img/pin-02.png">
     </div>
   </div>-->
+</div>
 </div>
 <!--<div class="block">
   <img src="https://unsplash.it/1920/1920/?random" data-speed="-0.75" class="img-parallax">
@@ -208,13 +213,15 @@
   <img src="./img/airplane.jpg" data-speed="0.75" class="img-parallax">
   <!--<h2>Parallax Speed 0.75</h2>-->
 </div>
+<div id="scrolltop">ページトップへ
+</div>
 <footer>
   <div class="footer-inner">
     <ul class="flex">
-        <li class="footer_link-list-item"><a href="#">News</a></li>
-        <li class="footer_link-list-item"><a href="#">Menu</a></li>
-        <li class="footer_link-list-item"><a href="#">Shop</a></li>
-        <li class="footer_link-list-item"><a href="#">About</a></li>
+        <li class="footer_link-list-item"><a href="#NewsInfo">News</a></li>
+        <li class="footer_link-list-item"><a href="#Menu">Menu</a></li>
+        <li class="footer_link-list-item"><a href="#Shop">Shop</a></li>
+        <li class="footer_link-list-item"><a href="#Access">Access</a></li>
     </ul>
   </div>
   <div class="footer_sns">
@@ -298,6 +305,50 @@ fadeEffect: {
 
 
 
+});
+</script>
+<script>
+$(function(){
+  $('a[href*="#"].anchor-link').on('click',function() {
+    var speed = 400;
+    var href= $(this).attr("href");
+    var target = $(href == "#" || href == "" ? 'html' : href);
+    var position = target.offset().top;
+    $('body,html').animate({scrollTop:position}, speed, 'swing');
+    return false;
+  });
+});
+</script>
+<script>
+$(function(){
+  var threshold = 200
+  var topBtn = $('#scrolltop');
+  topBtn.css('bottom', '-100px');
+  $(window).on('scroll',function () {
+    if ($(this).scrollTop() > threshold) {
+      topBtn.stop().animate({'bottom' : '30px'}, 200);
+    } else {
+      topBtn.stop().animate({'bottom' : '-100px'}, 200);
+    }
+  });
+  topBtn.on('click',function () {
+    $('body,html').animate({
+      scrollTop: 0
+    }, 500);
+    return false;
+  });
+});
+</script>
+<script>
+$(function () {
+ var headerHight = 100; //ヘッダの高さ
+ $('a[href^=#]').click(function(){
+     var href= $(this).attr("href");
+       var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top-headerHight; //ヘッダの高さ分位置をずらす
+     $("html, body").animate({scrollTop:position}, 550, "swing");
+        return false;
+   });
 });
 </script>
 </body>
