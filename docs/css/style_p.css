@@ -206,8 +206,8 @@ color:#666;
 .anchor{
     /*    */
     display: block;
-    padding-top: 14rem/*-100px*/;
-    margin-top: 14rem/*100px*/;
+    padding-top: 8rem/*-100px*/;
+    margin-top: 8rem/*100px*/;
 }
 
 .header__nav{
@@ -256,10 +256,18 @@ color:#666;
   background-color: #a9a9a9;
   color: #fff;
 }
+@media screen and (max-width: 640px) {
+.contents-inner{
+  padding: 1rem;
+  position: relative;
+}
+}
 
+@media screen and (min-width: 640px) {
 .contents-inner{
   padding: 10rem;
   position: relative;
+}
 }
 
 .contents-inner img {

@@ -99,7 +99,7 @@
 <div class="swiper-scrollbar"></div>
 </div>
 </div>
-<div id="NewsInfo">
+<div id="NewsInfo" class="anchor">
 <div>
   <!--<img src="https://unsplash.it/1920/1920/?image=1067" data-speed="1" class="img-parallax">
   <h2>Parallax Speed 1</h2>-->
@@ -313,7 +313,7 @@ $(function(){
     var speed = 400;
     var href= $(this).attr("href");
     var target = $(href == "#" || href == "" ? 'html' : href);
-    var position = target.offset().top;
+    var position = target.offset().top - 160;
     $('body,html').animate({scrollTop:position}, speed, 'swing');
     return false;
   });
