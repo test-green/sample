@@ -1,23 +1,23 @@
 <!--
-(function (){  //‘¦ŠÖ”‚ÅˆÍ‚ñ‚ÅƒOƒ[ƒoƒ‹•Ï”‚ğÁ‚·‚½‚ßA‚±‚Ìs‚Í‚±‚Ì‚Ü‚Ü‚Å
+(function (){  //ï¿½ï¿½ï¿½ï¿½ï¿½Öï¿½ï¿½ÅˆÍ‚ï¿½ï¿½ÅƒOï¿½ï¿½ï¿½[ï¿½oï¿½ï¿½ï¿½Ïï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ßAï¿½ï¿½ï¿½Ìsï¿½Í‚ï¿½ï¿½Ì‚Ü‚Ü‚ï¿½
 
-var N = 5;     //šŒ´–{80Bƒ}ƒEƒX‰æ‘œ•\¦”Bƒ}ƒEƒX‰æ‘œw’è‚ÍHTML‚Å‚·‚é‚±‚Æ
-var opa=0.7;    //š‰æ‘œ“§‰ß“xB0 ‚ÅŠ®‘S“§–¾‚È‚Ì‚ÅA0 ‚Íw’è‚µ‚È‚¢
-var S = 500;    //šŒ´–{500B‰æ‘œ‚ªƒ}ƒEƒX‚Éˆø‚«Šñ‚¹‚ç‚ê‚éB‘å‚«‚¢‚Ù‚Ç‘¬‚¢
-var Zx=-1;      //š•¶Í‚Ìã‚Éƒ}ƒEƒX‰æ‘œ‚ª—¬‚ê‚é‚©H@ã‚É—¬‚ê‚éF1   ‰º‚É‰B‚ê‚éF-1Bƒ}ƒCƒiƒXw’è‚É‚µ‚È‚¢‚ÆƒŠƒ“ƒN‚ª‰Ÿ‚¹‚È‚¢
+var N = 5;     //ï¿½ï¿½ï¿½ï¿½ï¿½{80ï¿½Bï¿½}ï¿½Eï¿½Xï¿½æ‘œï¿½\ï¿½ï¿½ï¿½ï¿½ï¿½Bï¿½}ï¿½Eï¿½Xï¿½æ‘œï¿½wï¿½ï¿½ï¿½ï¿½HTMLï¿½Å‚ï¿½ï¿½é‚±ï¿½ï¿½
+var opa=0.7;    //ï¿½ï¿½ï¿½æ‘œï¿½ï¿½ï¿½ß“xï¿½B0 ï¿½ÅŠï¿½ï¿½Sï¿½ï¿½ï¿½ï¿½ï¿½È‚Ì‚ÅA0 ï¿½Íwï¿½è‚µï¿½È‚ï¿½
+var S = 500;    //ï¿½ï¿½ï¿½ï¿½ï¿½{500ï¿½Bï¿½æ‘œï¿½ï¿½ï¿½}ï¿½Eï¿½Xï¿½Éˆï¿½ï¿½ï¿½ï¿½ñ‚¹‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Bï¿½å‚«ï¿½ï¿½ï¿½Ù‚Ç‘ï¿½ï¿½ï¿½
+var Zx=-1;      //ï¿½ï¿½ï¿½ï¿½ï¿½Í‚Ìï¿½ï¿½Éƒ}ï¿½Eï¿½Xï¿½æ‘œï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½é‚©ï¿½Hï¿½@ï¿½ï¿½ï¿½É—ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½F1   ï¿½ï¿½ï¿½É‰Bï¿½ï¿½ï¿½ï¿½ï¿½F-1ï¿½Bï¿½}ï¿½Cï¿½iï¿½Xï¿½wï¿½ï¿½ï¿½É‚ï¿½ï¿½È‚ï¿½ï¿½Æƒï¿½ï¿½ï¿½ï¿½Nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È‚ï¿½
 
 
-//w’è‚±‚±‚Ü‚Å-----------------------------------------------------------------------------------
+//ï¿½wï¿½è‚±ï¿½ï¿½ï¿½Ü‚ï¿½-----------------------------------------------------------------------------------
 var W = xm = ym = 0;
-var O,nx,ny,tp;//¡’Ç‰Á
+var O,nx,ny,tp;//ï¿½ï¿½ï¿½Ç‰ï¿½
 function spAn(X,Y,O){
 	this.obj = document.createElement("img");
 	this.obj.src = document.getElementById("doot").src;
-	this.obj.style.position = "fixed";//¡Œ´–{absoluteC³
+	this.obj.style.position = "fixed";//ï¿½ï¿½ï¿½ï¿½ï¿½{absoluteï¿½Cï¿½ï¿½
 	this.obj.style.left = X+"px";
 	this.obj.style.top = Y+"px";
-	this.obj.style.zIndex =Zx;//’Ç‰Á
-	this.obj.style.opacity =opa;//’Ç‰Á
+	this.obj.style.zIndex =Zx;//ï¿½Ç‰ï¿½
+	this.obj.style.opacity =opa;//ï¿½Ç‰ï¿½
 	document.body.appendChild(this.obj);
 	this.O   = O;
 	this.x   = X + W;
@@ -30,8 +30,8 @@ function spAn(X,Y,O){
 	this.zy  = -4 * Math.random();
 	this.SCR = function(){
 		with(this){
-                        tp=window.pageYOffset;//¡’Ç‰Á
-			if(y<-W)y=tp+ny+W; else if(y>tp+ny+W)y=-W;//¡tp+’Ç‰Á
+                        tp=window.pageYOffset;//ï¿½ï¿½ï¿½Ç‰ï¿½
+			if(y<-W)y=tp+ny+W; else if(y>tp+ny+W)y=-W;//ï¿½ï¿½tp+ï¿½Ç‰ï¿½
 			if(x<-W)x=nx+W; else if(x>nx+W)x=-W;
 			dx  = x - xm;
 			dy  = y - ym;
@@ -40,19 +40,19 @@ function spAn(X,Y,O){
 			x   = xm + dx * dt2 + zx;
 			y   = ym + dy * dt2 + zy;
 			obj.style.left = x - W+"px";
-			obj.style.top  =-tp+ y - W+"px";//¡-tp+’Ç‰ÁB-tp‚µ‚È‚¢‚ÆƒXƒNƒ[ƒ‹Œã‚Éƒ}ƒEƒX‚ÉW‡‚µ‚È‚¢
+			obj.style.top  =-tp+ y - W+"px";//ï¿½ï¿½-tp+ï¿½Ç‰ï¿½ï¿½B-tpï¿½ï¿½ï¿½È‚ï¿½ï¿½ÆƒXï¿½Nï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½Éƒ}ï¿½Eï¿½Xï¿½ÉWï¿½ï¿½ï¿½ï¿½ï¿½È‚ï¿½
 			if(O)O.SCR();
 		}
 	}
 }
 document.onmousemove = function(e){xm=e.pageX;ym=e.pageY;}
 function GeFe() {
-        tp=window.pageYOffset;//¡’Ç‰Á
+        tp=window.pageYOffset;//ï¿½ï¿½ï¿½Ç‰ï¿½
 	nx =window.innerWidth-18;
 	ny =window.innerHeight-18;
 	W  = document.getElementById("doot").width * 0.5;
 	xm = nx/2;
-	ym =tp+ ny/2;//¡tp+’Ç‰Á
+	ym =tp+ ny/2;//ï¿½ï¿½tp+ï¿½Ç‰ï¿½
 	for(var i=0;i<N;i++){
 		var a=Math.random()*Math.PI*2;
 		O = new spAn(-W+xm+Math.cos(a)*ym,-W+ym+Math.sin(a)*ym,O);
@@ -60,5 +60,72 @@ function GeFe() {
 	setInterval( function(){O.SCR();},16 );
 }
 GeFe();
-}());//‘¦ŠÖ”I—¹
+}());//ï¿½ï¿½ï¿½ï¿½ï¿½Öï¿½ï¿½Iï¿½ï¿½
 // -->
+
+if(!navigator.userAgent.match(/(iPhone|iPad|Android)/)){
+	<!--
+	(function (){  //ï¿½ï¿½ï¿½ï¿½ï¿½Öï¿½ï¿½ÅˆÍ‚ï¿½ï¿½ÅƒOï¿½ï¿½ï¿½[ï¿½oï¿½ï¿½ï¿½Ïï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ßAï¿½ï¿½ï¿½Ìsï¿½Í‚ï¿½ï¿½Ì‚Ü‚Ü‚ï¿½
+
+	var N = 5;     //ï¿½ï¿½ï¿½ï¿½ï¿½{80ï¿½Bï¿½}ï¿½Eï¿½Xï¿½æ‘œï¿½\ï¿½ï¿½ï¿½ï¿½ï¿½Bï¿½}ï¿½Eï¿½Xï¿½æ‘œï¿½wï¿½ï¿½ï¿½ï¿½HTMLï¿½Å‚ï¿½ï¿½é‚±ï¿½ï¿½
+	var opa=0.7;    //ï¿½ï¿½ï¿½æ‘œï¿½ï¿½ï¿½ß“xï¿½B0 ï¿½ÅŠï¿½ï¿½Sï¿½ï¿½ï¿½ï¿½ï¿½È‚Ì‚ÅA0 ï¿½Íwï¿½è‚µï¿½È‚ï¿½
+	var S = 500;    //ï¿½ï¿½ï¿½ï¿½ï¿½{500ï¿½Bï¿½æ‘œï¿½ï¿½ï¿½}ï¿½Eï¿½Xï¿½Éˆï¿½ï¿½ï¿½ï¿½ñ‚¹‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Bï¿½å‚«ï¿½ï¿½ï¿½Ù‚Ç‘ï¿½ï¿½ï¿½
+	var Zx=-1;      //ï¿½ï¿½ï¿½ï¿½ï¿½Í‚Ìï¿½ï¿½Éƒ}ï¿½Eï¿½Xï¿½æ‘œï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½é‚©ï¿½Hï¿½@ï¿½ï¿½ï¿½É—ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½F1   ï¿½ï¿½ï¿½É‰Bï¿½ï¿½ï¿½ï¿½ï¿½F-1ï¿½Bï¿½}ï¿½Cï¿½iï¿½Xï¿½wï¿½ï¿½ï¿½É‚ï¿½ï¿½È‚ï¿½ï¿½Æƒï¿½ï¿½ï¿½ï¿½Nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È‚ï¿½
+
+
+	//ï¿½wï¿½è‚±ï¿½ï¿½ï¿½Ü‚ï¿½-----------------------------------------------------------------------------------
+	var W = xm = ym = 0;
+	var O,nx,ny,tp;//ï¿½ï¿½ï¿½Ç‰ï¿½
+	function spAn(X,Y,O){
+		this.obj = document.createElement("img");
+		this.obj.src = document.getElementById("doot").src;
+		this.obj.style.position = "fixed";//ï¿½ï¿½ï¿½ï¿½ï¿½{absoluteï¿½Cï¿½ï¿½
+		this.obj.style.left = X+"px";
+		this.obj.style.top = Y+"px";
+		this.obj.style.zIndex =Zx;//ï¿½Ç‰ï¿½
+		this.obj.style.opacity =opa;//ï¿½Ç‰ï¿½
+		document.body.appendChild(this.obj);
+		this.O   = O;
+		this.x   = X + W;
+		this.y   = Y + W;
+		this.dx  = 0;
+		this.dy  = 0;
+		this.dt  = 0;
+		this.dt2 = 0;
+		this.zx  = 1 - 2 * Math.random();
+		this.zy  = -4 * Math.random();
+		this.SCR = function(){
+			with(this){
+	                        tp=window.pageYOffset;//ï¿½ï¿½ï¿½Ç‰ï¿½
+				if(y<-W)y=tp+ny+W; else if(y>tp+ny+W)y=-W;//ï¿½ï¿½tp+ï¿½Ç‰ï¿½
+				if(x<-W)x=nx+W; else if(x>nx+W)x=-W;
+				dx  = x - xm;
+				dy  = y - ym;
+				dt  = Math.sqrt(dx * dx + dy * dy);
+				dt2 = dt / (dt + S/dt);
+				x   = xm + dx * dt2 + zx;
+				y   = ym + dy * dt2 + zy;
+				obj.style.left = x - W+"px";
+				obj.style.top  =-tp+ y - W+"px";//ï¿½ï¿½-tp+ï¿½Ç‰ï¿½ï¿½B-tpï¿½ï¿½ï¿½È‚ï¿½ï¿½ÆƒXï¿½Nï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½Éƒ}ï¿½Eï¿½Xï¿½ÉWï¿½ï¿½ï¿½ï¿½ï¿½È‚ï¿½
+				if(O)O.SCR();
+			}
+		}
+	}
+	document.onmousemove = function(e){xm=e.pageX;ym=e.pageY;}
+	function GeFe() {
+	        tp=window.pageYOffset;//ï¿½ï¿½ï¿½Ç‰ï¿½
+		nx =window.innerWidth-18;
+		ny =window.innerHeight-18;
+		W  = document.getElementById("doot").width * 0.5;
+		xm = nx/2;
+		ym =tp+ ny/2;//ï¿½ï¿½tp+ï¿½Ç‰ï¿½
+		for(var i=0;i<N;i++){
+			var a=Math.random()*Math.PI*2;
+			O = new spAn(-W+xm+Math.cos(a)*ym,-W+ym+Math.sin(a)*ym,O);
+		}
+		setInterval( function(){O.SCR();},16 );
+	}
+	GeFe();
+	}());//ï¿½ï¿½ï¿½ï¿½ï¿½Öï¿½ï¿½Iï¿½ï¿½
+	// -->
+}
