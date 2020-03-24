@@ -273,5 +273,10 @@
         <script src="js/jquery.flexslider.js"></script>
         <script src="js/modernizr.js"></script>
         <script src="js/fluffy.js"></script>
+        <script type="text/javascript">
+          if (window.matchMedia( '(min-width: 769px)' ).matches) {//画面幅769px以上の場合
+          document.write('<script src="js/fluffy.js"><script>');
+          }
+        </script>
       </body>
     </html>
