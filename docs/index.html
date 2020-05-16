@@ -7,13 +7,13 @@
     <title>MEGUMI - Portfolio Site.</title>
     <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href="css/flexslider.css" rel="stylesheet" >
     <link href="css/styles.css" rel="stylesheet">
     <link href="css/queries.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
     <link rel="stylesheet" href="css/flickity.css" media="screen">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -21,10 +21,15 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
        <!--<script src="js/flickity.pkgd.js"></script>-->
-  </head>
+     <link href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap" rel="stylesheet">
+      </head>
       <body id="top">
         <header id="home">
+
           <nav>
+           <div class="col-md-12 text-right navicon">
+                    <a id="nav-toggle" class="nav_slide_button" href="#"><span></span></a>
+           </div>
             <div class="container-fluid">
               <div class="row">
                 <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
@@ -42,26 +47,23 @@
 
           <section class="hero" id="hero">
               <div class="container">
-               <img src="img/hero-bg.jpg" id="doot" style="display:none;">
                 <div class="row">
-                  <div class="col-md-12 text-right navicon">
-                    <a id="nav-toggle" class="nav_slide_button" href="#"><span></span></a>
-                  </div>
+
                 </div>
                 <div class="row">
                   <div class="col-md-8 col-md-offset-2 text-center inner">
-                    <h1 class="animated fadeInDown">MEGUMI</h1>
+                    <h1 class="animated fadeInDown">Megumi</h1>
                   </div>
                 </div>
               </div>
             </section>
           </header>
 
-        <section class="intro text-center section-padding" id="intro">
+        <section class="intro text-center" id="intro">
           <div class="container">
             <div class="row">
-              <div class="col-md-8 col-md-offset-2 wp1">
-                <h1>Works</h1>
+              <div class="col-md-12 wp1">
+                <h2>Works</h2>
               </div>
             </div>
           </div>
@@ -71,8 +73,8 @@
           <div class="container">
             <div class="row">
               <div class="col-md-12">
-                <h1 class="arrow">WEB DESIGN</h1>
-                <p>Dreamweaver Photoshop illustrator</p>
+                <h2 class="arrow">WEB DESIGN</h2>
+                <!--<p>Dreamweaver Photoshop Illustrator</p>-->
               </div>
             </div>
 
@@ -81,67 +83,60 @@
                 <div id="portfolioSlider">
                   <ul class="slides">
                     <li>
-                    <div class="col-md-12 wp5">
+                    <div class="col-md-12 wp5 bg-w">
                         <a href="http://www.makoto-inoue.net/aeras.html" target="blank"><img src="img/portfolio_08.jpg" alt="Portfolio Item" class="img-responsive center-block"></a>
-                        <h2>AERIAL YOGA STUDIO</h2>
-                        <p>Cording and update.</p>
-                        <p><a href="http://www.makoto-inoue.net/aeras.html" target="blank">http://www.makoto-inoue.net/aeras/</a></p>
+                        <h3>AERIAL YOGA STUDIO</h3>
+                        <p><a href="http://www.makoto-inoue.net/aeras.html" target="blank">http://www.makoto-inoue.net/aeras/</a><br>Cording and update.</p>
                     </div>
                     </li>
                     <li>
-                      <div class="col-md-12 wp5 delay-05s">
+                      <div class="col-md-12 wp5 delay-05s bg-w">
                       <img src="img/portfolio_01.jpg" alt="Portfolio Item" class="img-responsive center-block">
-                      <h2>Doga club (Asahi Broadcasting)</h2>
-                      <p>Design Cording and update.</p>
-                        <p>Not viewable</p>
+                      <h3>Doga club (Asahi Broadcasting)</h3>
+                      <p>Not viewable<br>Design Cording and update.</p>
                       </div>
                     </li>
                     <li>
-                      <div class="col-md-12 wp5 delay-1s">
+                      <div class="col-md-12 wp5 delay-1s bg-w">
                       <a href="http://asahi.co.jp/mynaviabcgolf/2014/" target="blank"><img src="img/portfolio_02.jpg" alt="Portfolio Item" class="img-responsive center-block"></a>
-                      <h2>Mynavi ABC Golf (Asahi Broadcasting)</h2>
-                      <p>Design Cording and update.</p>
-                      <p><a href="http://asahi.co.jp/mynaviabcgolf/2014/" target="blank">http://asahi.co.jp/mynaviabcgolf/2014/</a></p>
+                      <h3>Mynavi ABC Golf (Asahi Broadcasting)</h3>
+                      <p><a href="http://asahi.co.jp/mynaviabcgolf/2014/" target="blank">http://asahi.co.jp/mynaviabcgolf/2014/</a><br>Design Cording and update.</p>
                       </div>
                     </li>
                     <li>
-                      <div class="col-md-12 wp5">
+                      <div class="col-md-12 wp5 bg-w">
                        <a href="http://www.tv-osaka.co.jp/ip4/kitchen" target="blank"><img src="img/portfolio_03.jpg" alt="Portfolio Item" class="img-responsive center-block"></a>
-                      <h2>Kirei no daidokoro (Television Osaka Inc.)</h2>
-                      <p>Design Cording and update.</p>
-                        <p><a href="http://www.tv-osaka.co.jp/ip4/kitchen" target="blank">http://www.tv-osaka.co.jp/ip4/kitchen</a></p>
+                      <h3>Kirei no daidokoro (Television Osaka Inc.)</h3>
+                      <p><a href="http://www.tv-osaka.co.jp/ip4/kitchen" target="blank">http://www.tv-osaka.co.jp/ip4/kitchen</a><br>Design Cording and update.</p>
                       </div>
                     </li>
                     <li>
-                      <div class="col-md-12 wp5 delay-05s">
+                      <div class="col-md-12 wp5 delay-05s bg-w">
                        <a href="http://www.tv-osaka.co.jp/ip4/jcd/" target="blank"><img src="img/portfolio_04.jpg" alt="Portfolio Item" class="img-responsive center-block"></a>
-                      <h2>Japan Count Down (Television Osaka Inc.)</h2>
-                      <p>Design Cording and update.</p>
-                        <p><a href="http://www.tv-osaka.co.jp/ip4/jcd/" target="blank">http://www.tv-osaka.co.jp/ip4/jcd/</a></p>
+                      <h3>Japan Count Down (Television Osaka Inc.)</h3>
+                      <p>Not viewable<br>Design Cording and update.</p>
+                        <!--<p><a href="http://www.tv-osaka.co.jp/ip4/jcd/" target="blank">http://www.tv-osaka.co.jp/ip4/jcd/</a></p>-->
                       </div>
                     </li>
                     <li>
-                      <div class="col-md-12 wp5 delay-1s">
+                      <div class="col-md-12 wp5 delay-1s bg-w">
                        <a href="http://www.tv-osaka.co.jp/newsbiz/" target="blank"><img src="img/portfolio_05.jpg" alt="Portfolio Item" class="img-responsive center-block"></a>
-                      <h2>News biz (Television Osaka Inc.)</h2>
-                      <p>Design Cording and update.</p>
-                      <p><a href="http://www.tv-osaka.co.jp/newsbiz/" target="blank">http://www.tv-osaka.co.jp/newsbiz/</a></p>
+                      <h3>News biz (Television Osaka Inc.)</h3>
+                      <p><a href="http://www.tv-osaka.co.jp/newsbiz/" target="blank">http://www.tv-osaka.co.jp/newsbiz/</a><br>Design Cording and update.</p>
                       </div>
                     </li>
                     <li>
-                      <div class="col-md-12 wp5">
+                      <div class="col-md-12 wp5 bg-w">
                        <a href="http://www.tv-osaka.co.jp/ip4/asi/scent.html/" target="blank"><img src="img/portfolio_06.jpg" alt="Portfolio Item" class="img-responsive center-block"></a>
-                      <h2>Sent Of A Woman (Television Osaka Inc.)</h2>
-                      <p>Design Cording and update.</p>
-                      <p><a href="http://www.tv-osaka.co.jp/ip4/asi/scent.html/" target="blank">http://www.tv-osaka.co.jp/ip4/asi/scent.html/</a></p>
+                      <h3>Sent Of A Woman (Television Osaka Inc.)</h3>
+                      <p><a href="http://www.tv-osaka.co.jp/ip4/asi/scent.html/" target="blank">http://www.tv-osaka.co.jp/ip4/asi/scent.html/</a><br>Design Cording and update.</p>
                       </div>
                     </li>
                     <li>
-                      <div class="col-md-12 wp5 delay-05s">
+                      <div class="col-md-12 wp5 delay-05s bg-w">
                        <a href="http://www.tv-osaka.co.jp/kimsuro/" target="blank"><img src="img/portfolio_07.jpg" alt="Portfolio Item" class="img-responsive center-block"></a>
-                      <h2>Iron King Kim Suro (Television Osaka Inc.)</h2>
-                      <p>Design Cording and update.</p>
-                      <p><a href="http://www.tv-osaka.co.jp/kimsuro/" target="blank">http://www.tv-osaka.co.jp/kimsuro/</a></p>
+                      <h3>Iron King Kim Suro (Television Osaka Inc.)</h3>
+                      <p><a href="http://www.tv-osaka.co.jp/kimsuro/" target="blank">http://www.tv-osaka.co.jp/kimsuro/</a><br>Design Cording and update.</p>
                       </div>
                     </li>
                   </ul>
@@ -155,18 +150,18 @@
           <div class="container">
             <div class="row">
               <div class="col-md-12">
-                <h1 class="arrow">Pamphlet</h1>
-                <p>Photoshop illustrator</p>
+                <h2 class="arrow">Pamphlet</h2>
+                <!--<p>Photoshop illustrator</p>-->
               </div>
             </div>
             <div class="row">
               <div class="team-wrapper">
                   <ul class="slides">
                     <li>
-                      <div class="col-md-12 wp5 delay-05s">
+                      <div class="col-md-12 wp5 delay-05s bg-w">
                         <img src="img/bayside_p.jpg" alt="Illustration" class="img-responsive center-block">
-                        <h2>School Introduction (Bayside English Cebu)</h2>
-                        <p>Design</p>
+                        <h3>School Introduction (Bayside English Cebu)</h3>
+                        <p class="detail">Design</p>
                       </div>
                     </li>
                   </ul>
@@ -179,8 +174,8 @@
           <div class="container">
             <div class="row">
               <div class="col-md-12">
-                <h1 class="arrow">Illustration</h1>
-                <p>Photoshop illustrator</p>
+                <h2 class="arrow">Illustration</h2>
+                <!--<p>Photoshop illustrator</p>-->
               </div>
             </div>
             <div class="row">
@@ -188,44 +183,44 @@
                 <div id="teamSlider">
                   <ul class="slides">
                     <li>
-                    <div class="col-md-12 wp5">
+                    <div class="col-md-12 wp5 bg-w">
                         <img src="img/mati-07.jpg" alt="Illustration" class="img-responsive center-block">
-                        <h2>Zoomin Flash Game(Nippon Television Network Corporation)</h2>
+                        <h3>Zoomin Flash Game(Nippon Television Network Corporation)</h3>
                         <p>Illustlation (character design is another person.)</p>
                     </div>
                      </li>
                     <li>
-                      <div class="col-md-12 wp5 delay-05s">
+                      <div class="col-md-12 wp5 delay-05s bg-w">
                         <img src="img/mati-02.gif" alt="Illustration">
-                        <h2>Zoomin (Nippon Television Network Corporation)</h2>
+                        <h3>Zoomin (Nippon Television Network Corporation)</h3>
                         <p>Illustlation(character design is another person.)</p>
                       </div>
                     </li>
                     <li>
-                      <div class="col-md-12 wp5 delay-1s">
+                      <div class="col-md-12 wp5 delay-1s bg-w">
                         <img src="img/mati-01.gif" alt="Illustration">
-                        <h2>Zoomin (Nippon Television Network Corporation)</h2>
+                        <h3>Zoomin (Nippon Television Network Corporation)</h3>
                         <p>Illustlation(character design is another person.)</p>
                       </div>
                     </li>
                     <li>
-                      <div class="col-md-12 wp5">
+                      <div class="col-md-12 wp5 bg-w">
                         <img src="img/mati-04.jpg" alt="Illustration">
-                        <h2>Zoomin (Nippon Television Network Corporation)</h2>
+                        <h3>Zoomin (Nippon Television Network Corporation)</h3>
                         <p>Illustlation(character design is another person.)</p>
                       </div>
                     </li>
                     <li>
-                      <div class="col-md-12 wp5 delay-05s">
+                      <div class="col-md-12 wp5 delay-05s bg-w">
                         <img src="img/mati-05.jpg" alt="Illustration">
-                        <h2>Zoomin (Nippon Television Network Corporation)</h2>
+                        <h3>Zoomin (Nippon Television Network Corporation)</h3>
                         <p>Illustlation(character design is another person.)</p>
                       </div>
                     </li>
                     <li>
-                      <div class="col-md-12 wp5 delay-1s">
+                      <div class="col-md-12 wp5 delay-1s bg-w">
                         <img src="img/mati-03.gif" alt="Illustration">
-                        <h2>Zoomin (Nippon Television Network Corporation)</h2>
+                        <h3>Zoomin (Nippon Television Network Corporation)</h3>
                         <p>Illustlation(character design is another person.)</p>
                       </div>
                     </li>
@@ -236,22 +231,7 @@
           </div>
         </section>
 
-
-
-
-        <!-- <div class="ignite-cta text-center">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <ul class="social-buttons">
-                  <li><a href="#" class="social-btn"><i class="fa fa-envelope"></i></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
-        <section class="dark-bg text-center contact-wrap" id="contact">
+        <section class="dark-bg text-center contact-wrap section-padding" id="contact">
           <a href="#top" class="up-btn"><i class="fa fa-chevron-up"></i></a>
         </section>
 
@@ -272,11 +252,8 @@
         <script src="js/scripts.js"></script>
         <script src="js/jquery.flexslider.js"></script>
         <script src="js/modernizr.js"></script>
-        <script src="js/fluffy.js"></script>
-        <script type="text/javascript">
-          if (window.matchMedia( '(min-width: 769px)' ).matches) {//画面幅769px以上の場合
-          document.write('<script src="js/fluffy.js"><script>');
-          }
-        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+        <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/85188/jquery.wavify.js"></script>
+        <script src="js/wavify.js"></script>
       </body>
     </html>
