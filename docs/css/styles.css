@@ -50,7 +50,7 @@ Typography
 * Addresses font sizes within `section` and `article` in Firefox 4+, Safari 5, * and Chrome. */
 h1 { font-family: 'Petit Formal Script', cursive; }
 h2 { font-size: 2em; text-transform: uppercase; margin: 0.67em 0; padding: 1.0em 0;}
-h3 { font-size: 1.5em; margin: 0.83em 0;  margin: 0.67em 0 0.2em;}
+h3 { font-size: 1.2rem; margin: 0.83em 0;  margin: 0.67em 0 0.2em;}
 h4 { font-size: 1.17em; margin: 1em 0; }
 h5 { font-size: 1em; margin: 1.33em 0; }
 h6 { font-size: 0.83em; margin: 1.67em 0; }
@@ -297,7 +297,7 @@ CTA
 /* ==========================================================================
 Illutlation
 ========================================================================== */
-.illustlation img { margin-bottom: 40px; }
+/*.illustlation img { margin-bottom: 40px; }*/
 ul.social-buttons { list-style: none; margin: 0; padding: 0; }
 ul.social-buttons li { display: inline-block; margin-right: 10px; }
 ul.social-buttons li:last-child { margin-right: 0; }
@@ -334,6 +334,7 @@ ul.slides li { margin-bottom: 20px; padding: 1rem 0 0; background: #fff;}
 Waypoints
 ========================================================================== */
 .wp1, .wp2, .wp3, .wp4, .wp5, .wp6 { visibility: hidden; }
+.wp2, .wp4, .wp5, .light-box { margin-bottom: 30px; }
 .bounceInLeft, .bounceInRight, .fadeInUp, .fadeInUpDelay, .fadeInDown, .fadeInUpD, .fadeInLeft, .fadeInRight { visibility: visible; }
 .delay-05s { animation-delay: 0.5s; -webkit-animation-delay: 0.5s; }
 .delay-1s { animation-delay: 1s; -webkit-animation-delay: 1s; }
