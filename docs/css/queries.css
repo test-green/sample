@@ -1,5 +1,7 @@
 /* 320px (iPhone) */
 @media screen and (max-width:320px) {
+	.section-padding { padding: 0; }
+	#contact.section-padding { padding: 7rem 0 4rem; }
 }
 /* 480px (WVGA - Low End Windows Phone) */
 @media screen and (max-width:480px) {
@@ -9,6 +11,8 @@
 	.wp2, .wp4, .wp5, .light-box { margin-bottom: 30px; }
 	.legals { text-align: center; margin: 0; padding: 0; }
 	.credit { text-align: center; }
+	#contact.section-padding { padding: 7rem 0 4rem; }
+	.section-padding { padding: 0; }
 }
 /* xGA iPad */
 @media screen and (max-width:1024px) {
