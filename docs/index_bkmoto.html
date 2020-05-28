@@ -9,46 +9,41 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="css/flexslider.css" rel="stylesheet" >
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/queries.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/flickity.css" media="screen">
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
+       <!--<script src="js/flickity.pkgd.js"></script>-->
      <link href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap" rel="stylesheet">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
-     <link href="css/swiper.css" rel="stylesheet">
-     <link href="css/styles.css" rel="stylesheet">
-     <link href="css/queries.css" rel="stylesheet">
-  </head>
-
+      </head>
       <body id="top">
-       <div class="wrapper">
         <header id="home">
 
-          <section id="navicon">
           <nav>
-
+           <div class="col-md-12 text-right navicon">
+                    <a id="nav-toggle" class="nav_slide_button" href="#"><span></span></a>
+           </div>
             <div class="container-fluid">
               <div class="row">
-                <div class="navToggle">
-                   <!--<a id="nav-toggle" class="nav_slide_button" href="#"><span></span></a>-->
-                       <span></span><span></span><span></span>
-                </div>
-                <div class="">
-                  <nav id="top_nav">
+                <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
+                  <nav class="pull">
                     <ul class="top-nav">
-                      <li><a href="#portfolio">WEBDESIGN<span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
-                      <li><a href="#pamphlet">PAMPHLET<span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
-                      <li><a href="#illustlation">ILLUSTRATION<span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+                      <li><a href="#portfolio">Webdesign<span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+                      <li><a href="#pamphlet">Pamphlet<span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
+                      <li><a href="#illustlation">Illustlation<span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
                     </ul>
                   </nav>
                 </div>
               </div>
             </div>
           </nav>
-          </section>
 
           <section class="hero" id="hero">
               <div class="container">
@@ -61,10 +56,10 @@
                   </div>
                 </div>
               </div>
-          </section>
+            </section>
           </header>
 
-          <section class="intro text-center" id="intro">
+        <section class="intro text-center" id="intro">
           <div class="container">
             <div class="row">
               <div class="col-md-12 wp1">
@@ -72,136 +67,166 @@
               </div>
             </div>
           </div>
-          </section>
+        </section>
 
-
-          <section class="portfolio text-center section-padding">
-          <div class="container" id="portfolio">
+       <section class="portfolio text-center section-padding" id="portfolio">
+          <div class="container">
             <div class="row">
-              <div class="col-md-12 wp2">
+              <div class="col-md-12">
                 <h2 class="arrow">WEB DESIGN</h2>
                 <!--<p>Dreamweaver Photoshop Illustrator</p>-->
               </div>
             </div>
 
             <div class="row">
-            <!-- Swiper START -->
-            <div class="swiper-container swiper1">
-            	<!-- ���C���\������ -->
-            	<div class="swiper-wrapper">
-            		<!-- �e�X���C�h -->
-            		<div class="swiper-slide wp2 delay-05s">
+              <div class="team-wrapper">
+                <div id="portfolioSlider">
+                  <ul class="slides">
+                    <li>
+                    <div class="col-md-12 wp5 bg-w">
                         <a href="http://www.makoto-inoue.net/aeras.html" target="blank"><img src="img/portfolio_08.jpg" alt="Portfolio Item" class="img-responsive center-block"></a>
                         <h3>AERIAL YOGA STUDIO</h3>
                         <p><a href="http://www.makoto-inoue.net/aeras.html" target="blank">http://www.makoto-inoue.net/aeras/</a><br>Cording and update.</p>
-            		</div>
-            		<div class="swiper-slide wp2">
+                    </div>
+                    </li>
+                    <li>
+                      <div class="col-md-12 wp5 delay-05s bg-w">
                       <img src="img/portfolio_01.jpg" alt="Portfolio Item" class="img-responsive center-block">
                       <h3>Doga club (Asahi Broadcasting)</h3>
                       <p>Not viewable<br>Design Cording and update.</p>
-            		</div>
-            		<div class="swiper-slide wp2">
+                      </div>
+                    </li>
+                    <li>
+                      <div class="col-md-12 wp5 delay-1s bg-w">
                       <a href="http://asahi.co.jp/mynaviabcgolf/2014/" target="blank"><img src="img/portfolio_02.jpg" alt="Portfolio Item" class="img-responsive center-block"></a>
                       <h3>Mynavi ABC Golf (Asahi Broadcasting)</h3>
                       <p><a href="http://asahi.co.jp/mynaviabcgolf/2014/" target="blank">http://asahi.co.jp/mynaviabcgolf/2014/</a><br>Design Cording and update.</p>
-            		</div>
-            		<div class="swiper-slide wp2">
+                      </div>
+                    </li>
+                    <li>
+                      <div class="col-md-12 wp5 bg-w">
                        <a href="http://www.tv-osaka.co.jp/ip4/kitchen" target="blank"><img src="img/portfolio_03.jpg" alt="Portfolio Item" class="img-responsive center-block"></a>
                       <h3>Kirei no daidokoro (Television Osaka Inc.)</h3>
                       <p><a href="http://www.tv-osaka.co.jp/ip4/kitchen" target="blank">http://www.tv-osaka.co.jp/ip4/kitchen</a><br>Design Cording and update.</p>
-                </div>
-            		<div class="swiper-slide wp2 delay-05s">
-                      <img src="img/portfolio_04.jpg" alt="Portfolio Item" class="img-responsive center-block">
+                      </div>
+                    </li>
+                    <li>
+                      <div class="col-md-12 wp5 delay-05s bg-w">
+                       <a href="http://www.tv-osaka.co.jp/ip4/jcd/" target="blank"><img src="img/portfolio_04.jpg" alt="Portfolio Item" class="img-responsive center-block"></a>
                       <h3>Japan Count Down (Television Osaka Inc.)</h3>
                       <p>Not viewable<br>Design Cording and update.</p>
-            		</div>
-            		<div class="swiper-slide wp2">
-                      <a href="http://www.tv-osaka.co.jp/newsbiz/" target="blank"><img src="img/portfolio_05.jpg" alt="Portfolio Item" class="img-responsive center-block"></a>
+                        <!--<p><a href="http://www.tv-osaka.co.jp/ip4/jcd/" target="blank">http://www.tv-osaka.co.jp/ip4/jcd/</a></p>-->
+                      </div>
+                    </li>
+                    <li>
+                      <div class="col-md-12 wp5 delay-1s bg-w">
+                       <a href="http://www.tv-osaka.co.jp/newsbiz/" target="blank"><img src="img/portfolio_05.jpg" alt="Portfolio Item" class="img-responsive center-block"></a>
                       <h3>News biz (Television Osaka Inc.)</h3>
                       <p><a href="http://www.tv-osaka.co.jp/newsbiz/" target="blank">http://www.tv-osaka.co.jp/newsbiz/</a><br>Design Cording and update.</p>
-            		</div>
-            		<div class="swiper-slide wp2">
-                      <a href="http://www.tv-osaka.co.jp/ip4/asi/scent.html/" target="blank"><img src="img/portfolio_06.jpg" alt="Portfolio Item" class="img-responsive center-block"></a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="col-md-12 wp5 bg-w">
+                       <a href="http://www.tv-osaka.co.jp/ip4/asi/scent.html/" target="blank"><img src="img/portfolio_06.jpg" alt="Portfolio Item" class="img-responsive center-block"></a>
                       <h3>Sent Of A Woman (Television Osaka Inc.)</h3>
                       <p><a href="http://www.tv-osaka.co.jp/ip4/asi/scent.html/" target="blank">http://www.tv-osaka.co.jp/ip4/asi/scent.html/</a><br>Design Cording and update.</p>
-            		</div>
-            		<div class="swiper-slide wp2">
+                      </div>
+                    </li>
+                    <li>
+                      <div class="col-md-12 wp5 delay-05s bg-w">
                        <a href="http://www.tv-osaka.co.jp/kimsuro/" target="blank"><img src="img/portfolio_07.jpg" alt="Portfolio Item" class="img-responsive center-block"></a>
                       <h3>Iron King Kim Suro (Television Osaka Inc.)</h3>
                       <p><a href="http://www.tv-osaka.co.jp/kimsuro/" target="blank">http://www.tv-osaka.co.jp/kimsuro/</a><br>Design Cording and update.</p>
-            		</div>
-            		</div>
-            		<div class="swiper-pagination page1"></div>
-            	</div>
-            <!-- Swiper END -->
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
-          </section>
+        </section>
 
-          <section class="pamphlet text-center section-padding">
-          <div class="container" id="pamphlet">
-          <div class="row">
-              <div class="col-md-12 wp3">
+        <section class="pamphlet text-center section-padding" id="pamphlet">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
                 <h2 class="arrow">Pamphlet</h2>
+                <!--<p>Photoshop illustrator</p>-->
               </div>
             </div>
             <div class="row">
-              <div class="swiper-container">
-
-                      <div class="col-md-12 wp3 delay-05s bg-w pt-20">
+              <div class="team-wrapper">
+                  <ul class="slides">
+                    <li>
+                      <div class="col-md-12 wp5 delay-05s bg-w">
                         <img src="img/bayside_p.jpg" alt="Illustration" class="img-responsive center-block">
                         <h3>School Introduction (Bayside English Cebu)</h3>
                         <p class="detail">Design</p>
                       </div>
-
+                    </li>
+                  </ul>
               </div>
             </div>
-          </section>
+          </div>
+        </section>
 
-       <section class="illustlation text-center section-padding">
-          <div class="container" id="illustlation">
+       <section class="illustlation text-center section-padding" id="illustlation">
+          <div class="container">
             <div class="row">
-              <div class="col-md-12 wp4">
+              <div class="col-md-12">
                 <h2 class="arrow">Illustration</h2>
-
+                <!--<p>Photoshop illustrator</p>-->
               </div>
             </div>
             <div class="row">
-            <!-- 2�ڂ�Swiper START -->
-            	<!-- Swiper START -->
-            <div class="swiper-container swiper2">
-            		<!-- ���C���\������ -->
-            		<div class="swiper-wrapper">
-            			<!-- �e�X���C�h -->
-            			<div class="swiper-slide wp5">
+              <div class="team-wrapper">
+                <div id="teamSlider">
+                  <ul class="slides">
+                    <li>
+                    <div class="col-md-12 wp5 bg-w">
                         <img src="img/mati-07.jpg" alt="Illustration" class="img-responsive center-block">
                         <h3>Zoomin Flash Game(Nippon Television Network Corporation)</h3>
                         <p>Illustlation (character design is another person.)</p>
-            			</div>
-            			<div class="swiper-slide wp5">
+                    </div>
+                     </li>
+                    <li>
+                      <div class="col-md-12 wp5 delay-05s bg-w">
                         <img src="img/mati-02.gif" alt="Illustration">
                         <h3>Zoomin (Nippon Television Network Corporation)</h3>
                         <p>Illustlation(character design is another person.)</p>
-                        </div>
-            			<div class="swiper-slide wp5">
+                      </div>
+                    </li>
+                    <li>
+                      <div class="col-md-12 wp5 delay-1s bg-w">
                         <img src="img/mati-01.gif" alt="Illustration">
                         <h3>Zoomin (Nippon Television Network Corporation)</h3>
                         <p>Illustlation(character design is another person.)</p>
-                        </div>
-            			<div class="swiper-slide wp5">
+                      </div>
+                    </li>
+                    <li>
+                      <div class="col-md-12 wp5 bg-w">
                         <img src="img/mati-04.jpg" alt="Illustration">
                         <h3>Zoomin (Nippon Television Network Corporation)</h3>
                         <p>Illustlation(character design is another person.)</p>
-                        </div>
-            			<div class="swiper-slide wp5">
+                      </div>
+                    </li>
+                    <li>
+                      <div class="col-md-12 wp5 delay-05s bg-w">
                         <img src="img/mati-05.jpg" alt="Illustration">
                         <h3>Zoomin (Nippon Television Network Corporation)</h3>
                         <p>Illustlation(character design is another person.)</p>
-                        </div>
-            			</div>
-            <div class="swiper-pagination page2"></div>
-            </div>
-            <!-- Swiper END -->
+                      </div>
+                    </li>
+                    <li>
+                      <div class="col-md-12 wp5 delay-1s bg-w">
+                        <img src="img/mati-03.gif" alt="Illustration">
+                        <h3>Zoomin (Nippon Television Network Corporation)</h3>
+                        <p>Illustlation(character design is another person.)</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -219,18 +244,16 @@
             </div>
           </div>
         </footer>
-        </div>
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js">
-        <script src="js/bootstrap.min.js"></script>
         <script src="js/waypoints.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
         <script src="js/scripts.js"></script>
-        <script src="js/modernizr.js"></script>
-      　<script src="js/swipe.js"></script>
+        <script src="js/jquery.flexslider.js"></script>
         <script src="js/modernizr.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
-
+        <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/85188/jquery.wavify.js"></script>
+        <script src="js/wavify.js"></script>
       </body>
     </html>

@@ -26,15 +26,14 @@ Base
 
 html { font-size: 100%; /* 1 */
 	-webkit-text-size-adjust: 100%; /* 2 */
--ms-text-size-adjust: 100%; /* 2 */
-height: 100%; }
+-ms-text-size-adjust: 100%; /* 2 */ }
 html, html a { -webkit-font-smoothing: antialiased; text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004); }
 /* * Addresses `font-family` inconsistency between `textarea` and other form
 * elements. */
 html, button, input, select, textarea { font-family: 'Varela Round', sans-serif; }
 /* * Addresses margins handled incorrectly in IE 6/7. */
-body { margin: 0; font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;background:#f3f5f8; height: 100%;}
-.wrapper{ width: 100%; position: relative; min-height: 100%;}
+body { margin: 0; font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;background:#f3f5f8;}
+; }
 
 /* ==========================================================================
 Links
@@ -195,28 +194,29 @@ h2::after { content: " "; border: solid 1px  #353233; display: block; width: 35p
 /* ==========================================================================
 Navigation
 ========================================================================== */
-#top_nav {position: fixed; width: 100%; z-index: 4; transform: translateY(-100%); transition: all 0.6s; width: 100%; /*padding-top:-100px;*/}
-#top_nav ul { background: rgba(243,245,248,0.8); list-style-type: none; margin: 0 auto; /*padding: 0;*/ width: 100%; display:inherit;}
-#top_nav ul li { color: rgba(36,40,48, 0.6); display: block; border-bottom: 1px dotted rgba(255, 255, 255, 0.2); transition: all 0.5s ease; -moz-transition: all 0.5s ease; -webkit-transition: all 0.5s ease; -o-transition: all 0.5s ease; padding-left: 0; }
-#top_nav ul li:last-child { border: none; }
-#top_nav ul li a { color: rgba(36,40,48, 0.6); display: block; padding: 20px; transition: all 0.5s ease; -moz-transition: all 0.5s ease; -webkit-transition: all 0.5s ease; -o-transition: all 0.5s ease; padding-left: 0; /*position: relative;*/ }
-#top_nav ul li a:hover, nav ul li a:focus { text-decoration: none; color: rgba(36,40,48, 1); }
-/* このクラスを、jQueryで付与・削除する */
-#top_nav.active { transform: translateY(0%);}
-.navToggle { display: block; position: fixed;    /* bodyに対しての絶対位置指定 */
-			       right: 15px; top: 0; cursor: pointer; padding: 30px 35px 16px 0px; z-index: 5;}
-.navToggle span { cursor: pointer; border-radius: 1px; -moz-border-radius: 1px; -webkit-border-radius: 1px; -o-border-radius: 1px; height: 2px; width: 25px; background: #8c9398; position: absolute; display: block; content: ''; }
-.navToggle span, .navToggle span:nth-child(1), .navToggle span:nth-child(2), .navToggle span:nth-child(3),.navToggle span:nth-child(4) { transition: all 500ms ease-in-out; -webkit-transition: all 500ms ease-in-out; -moz-transition: all 500ms ease-in-out; -o-transition: all 500ms ease-in-out; }
-.navToggle span:nth-child(1) { top: 9px; }
-.navToggle span:nth-child(2) { top: 18px; }
-.navToggle span:nth-child(3) { top: 27px; }
-.navToggle span:nth-child(4) { border: none; color: #8c9398; font-size: 9px; font-weight: bold; top: 34px; }
-/*ハンバーガーメニュータップ後CSS*/
-/* 最初のspanをマイナス45度に */
-.navToggle.active span:nth-child(1) { top: 18px; eft: 0px; border-bottom: solid 1px #8c9398; -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); transform: rotate(-45deg); }
-/* 2番目と3番目のspanを45度に */
-.navToggle.active span:nth-child(2),.navToggle.active span:nth-child(3) { top: 18px; border-bottom: solid 1px #8c9398; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); transform: rotate(45deg); }
-.indicator { position: absolute; right: 100px !important; }
+nav { background-color: #f3f5f8; margin-top: -1px;}
+nav ul { list-style: none; padding: 0;}
+nav ul li { color: rgba(36,40,48, 0.6); display: block; border-bottom: 1px dotted rgba(255, 255, 255, 0.2); transition: all 0.5s ease; -moz-transition: all 0.5s ease; -webkit-transition: all 0.5s ease; -o-transition: all 0.5s ease; padding-left: 0; position: relative; }
+nav ul li:last-child { border: none; }
+nav ul li a { color: rgba(36,40,48, 0.6); display: block; padding: 20px; transition: all 0.5s ease; -moz-transition: all 0.5s ease; -webkit-transition: all 0.5s ease; -o-transition: all 0.5s ease; padding-left: 0; position: relative; }
+nav ul li a:hover, nav ul li a:focus { text-decoration: none; color: rgba(36,40,48, 1); }
+#nav-toggle { position: absolute; right: 15px; top: 0; }
+#nav-toggle { cursor: pointer; padding: 30px 35px 16px 0px; }
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after { cursor: pointer; border-radius: 1px; -moz-border-radius: 1px; -webkit-border-radius: 1px; -o-border-radius: 1px; height: 2px; width: 25px; background: #8c9398; position: absolute; display: block; content: ''; }
+#nav-toggle span:before { top: -10px; }
+#nav-toggle span:after { bottom: -10px; }
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after { transition: all 500ms ease-in-out; -webkit-transition: all 500ms ease-in-out; -moz-transition: all 500ms ease-in-out; -o-transition: all 500ms ease-in-out; }
+#nav-toggle.active span { background-color: transparent; }
+#nav-toggle.active span:before, #nav-toggle.active span:after { top: 0; }
+#nav-toggle.active span:before { transform: rotate(45deg); -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); }
+#nav-toggle.active span:after { transform: translateY(-10px) rotate(-45deg); -webkit-transform: translateY(-10px) rotate(-45deg); -ms-transform: translateY(-10px) rotate(-45deg); top: 10px; }
+.navicon { position: relative; /*height: 26px;*/}
+.indicator { position: absolute; right: 0 !important; }
+.pull { display: none; }
+/* 固定
+.fixed { position: fixed; top: 0; padding: 0; width: 100%; z-index: 1000;}*/
+
+
 /* ==========================================================================
 Hero
 ========================================================================== */
@@ -321,7 +321,7 @@ Contact
 Footer
 ========================================================================== */
 footer a { color: #a1a9b0; }
-footer { background-color: #fff/*242830*/; padding: 40px 0 30px; bottom:0;}
+footer { background-color: #fff/*242830*/; padding: 40px 0 30px; }
 footer p { color: #fff; }
 ul.legals { list-style: none; color: #fff; line-height: 25px; }
 ul.legals li { display: inline-block; }

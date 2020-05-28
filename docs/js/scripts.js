@@ -34,6 +34,20 @@ $(document).ready(function() {
 	});
 
 });
+/***************** Nav ******************/
+$(function() {
+    $('.navToggle').click(function() {
+        $(this).toggleClass('active');
+        if ($(this).hasClass('active')) {
+            $('#top_nav').addClass('active');
+        } else {
+            $('#top_nav').removeClass('active');
+        }
+    });
+    $('#top_nav a[href]').on('click', function(event) {
+    $('.navToggle').trigger('click');
+});
+});
 
 /***************** Slide-In Nav ******************/
 
