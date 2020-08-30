@@ -196,7 +196,7 @@ h2::after { content: " "; border: solid 1px  #353233; display: block; width: 35p
 Navigation
 ========================================================================== */
 #top_nav {position: fixed; width: 100%; z-index: 4; transform: translateY(-100%); transition: all 0.6s; width: 100%; /*padding-top:-100px;*/}
-#top_nav ul { background: rgba(243,245,248,0.8); list-style-type: none; margin: 0 auto; /*padding: 0;*/ width: 100%; display:inherit;}
+#top_nav ul { background: rgba(243,245,248,0.8); list-style-type: none; margin: 0 auto; padding-bottom: 30px; width: 100%; display:inherit;}
 #top_nav ul li { color: rgba(36,40,48, 0.6); display: block; border-bottom: 1px dotted rgba(255, 255, 255, 0.2); transition: all 0.5s ease; -moz-transition: all 0.5s ease; -webkit-transition: all 0.5s ease; -o-transition: all 0.5s ease; padding-left: 0; }
 #top_nav ul li:last-child { border: none; }
 #top_nav ul li a { color: rgba(36,40,48, 0.6); display: block; padding: 20px; transition: all 0.5s ease; -moz-transition: all 0.5s ease; -webkit-transition: all 0.5s ease; -o-transition: all 0.5s ease; padding-left: 0; /*position: relative;*/ }
@@ -204,8 +204,8 @@ Navigation
 /* このクラスを、jQueryで付与・削除する */
 #top_nav.active { transform: translateY(0%);}
 .navToggle { display: block; position: fixed;    /* bodyに対しての絶対位置指定 */
-			       right: 15px; top: 0; cursor: pointer; padding: 30px 35px 16px 0px; z-index: 5;}
-.navToggle span { cursor: pointer; border-radius: 1px; -moz-border-radius: 1px; -webkit-border-radius: 1px; -o-border-radius: 1px; height: 2px; width: 25px; background: #8c9398; position: absolute; display: block; content: ''; }
+			       left: 15px; top: 0; cursor: pointer; padding: 30px 35px 16px 0px; margin-top: 5px; z-index: 5;}
+.navToggle span { cursor: pointer; border-radius: 1px; -moz-border-radius: 1px; -webkit-border-radius: 1px; -o-border-radius: 1px; height: 2px; width: 18px; background: #8c9398; position: absolute; display: block; content: ''; }
 .navToggle span, .navToggle span:nth-child(1), .navToggle span:nth-child(2), .navToggle span:nth-child(3),.navToggle span:nth-child(4) { transition: all 500ms ease-in-out; -webkit-transition: all 500ms ease-in-out; -moz-transition: all 500ms ease-in-out; -o-transition: all 500ms ease-in-out; }
 .navToggle span:nth-child(1) { top: 9px; }
 .navToggle span:nth-child(2) { top: 18px; }
@@ -217,6 +217,7 @@ Navigation
 /* 2番目と3番目のspanを45度に */
 .navToggle.active span:nth-child(2),.navToggle.active span:nth-child(3) { top: 18px; border-bottom: solid 1px #8c9398; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); transform: rotate(45deg); }
 .indicator { position: absolute; right: 100px !important; }
+.top-nav { padding-top: 25px; }
 /* ==========================================================================
 Hero
 ========================================================================== */
@@ -288,6 +289,7 @@ a.expand { display: block; position: absolute; z-index: 100; text-align: center;
 .no_expand { display: block; position: absolute; z-index: 100; text-align: center; color: #fff; font-weight: 600; font-size: 14px; text-transform: uppercase; line-height: 30px;}
 .bg-w { background: #fff;}
 .pt-20 {padding-top: 20px;}
+.pt-30 {padding-top: 30px}
 /* ==========================================================================
 Subscribe
 ========================================================================== */
